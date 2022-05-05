@@ -1,6 +1,6 @@
 ---
-- name: Create vSphere resource for AMQ Streams
-  hosts: ansible
+- name: Create vSphere resource 
+  hosts: localhost
   connection: local
   gather_facts: no
   tasks:
