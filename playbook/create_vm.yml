@@ -27,7 +27,7 @@
       template: "{{ rhel_image }}"
       datacenter: "{{ datacenter }}"
       folder: "{{ datacenter }}/vm/{{ folder }}"
-          state: poweredon
+      state: poweredon
       customization: 
         hostname: "{{ hostvars[item]['name']  }}"
         dns_servers: "{{ dns }}"
