@@ -33,7 +33,7 @@
         dns_servers: "{{ dns }}"
         dns_suffix: "rhdemo.local"
       networks:
-      - name: "{{ nic_pg }}"
+      - name: "{{ network_portgroup }}"
         type: static
         ip: "{{ hostvars[item]['ip_address'] }}"
         netmask: "{{ netmask }}"
@@ -41,5 +41,5 @@
         dns_server: "{{dns}}"
       wait_for_customization: no
       wait_for_ip_address: no
-    with_items: "{{ query('inventory_hostnames','amq')  }}"
+    with_items: "{{ query('inventory_hostnames','rhel')  }}"
     delegate_to: localhost
