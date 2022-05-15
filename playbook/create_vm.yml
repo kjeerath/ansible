@@ -1,6 +1,6 @@
 ---
 - name: Create vSphere resource 
-  hosts: localhost
+  hosts: ansible
   connection: local
   gather_facts: no
   tasks:
