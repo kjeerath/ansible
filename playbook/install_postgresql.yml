@@ -1,6 +1,5 @@
 ---
 
-- hosts: dbiis1.rhdemo.local
-  become: true
+
   roles:
     - ansible-postgresql
