@@ -4,7 +4,7 @@ vcenter_username: "redhat@vsphere.local"
 vcenter_password: "P@ssw0rd"
 datacenter: "RedHat"
 validate_certs: False
-folder: "dbiis"
+folder: "dbaas"
 gateway: "192.168.0.1"
 dns: "192.168.3.32"
 netmask: "255.255.252.0"
