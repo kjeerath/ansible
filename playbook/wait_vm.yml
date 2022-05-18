@@ -1,5 +1,7 @@
 ---
 - name: Check the Uptime of the servers
-  shell: "uptime"
-  register: Uptime
+  tasks:
+  - name: check uptime
+    shell: "uptime"
+    register: Uptime
 
