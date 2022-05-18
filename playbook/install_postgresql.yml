@@ -1,6 +1,5 @@
 ---
 
 - hosts: dbiis1.rhdemo.local
-  remote_user: root
   roles:
-    - postgresql
+    - ansible-postgresql
