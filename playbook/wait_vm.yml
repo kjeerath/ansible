@@ -1,9 +1,5 @@
 ---
-- name: wait the server reboot
-  host: ansible
-
-
-  - name: Check the Uptime of the servers
-    shell: "uptime"
-    register: Uptime
+- name: Check the Uptime of the servers
+  shell: "uptime"
+  register: Uptime
 
