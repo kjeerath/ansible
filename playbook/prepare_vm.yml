@@ -10,5 +10,5 @@
       delay: 10
 
   - name: check uptime
-    shell: "uptime"
+    shell: "df -h"
     register: Uptime
