@@ -2,12 +2,6 @@
 - name: wait the server reboot
   host: ansible
 
-  - name: Waits for port 22
-    wait_for:
-      host: 192.168.3.223
-      port: 22
-      delay: 10
-    connection local
 
   - name: Check the Uptime of the servers
     shell: "uptime"
