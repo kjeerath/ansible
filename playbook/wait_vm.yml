@@ -1,6 +1,5 @@
 ---
-- name: Waits for port 22 of any IP to close active connections, don't start checking for 10 seconds
-  wait_for:
+- name: Waits for port 22 
     host: postgresql1.rhdemo.local
     port: 22
     delay: 10
