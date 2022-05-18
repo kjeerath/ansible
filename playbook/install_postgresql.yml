@@ -1,5 +1,5 @@
 ---
-
-
+- name: install postgresql 
+  hosts: ansible
   roles:
     - ansible-postgresql
