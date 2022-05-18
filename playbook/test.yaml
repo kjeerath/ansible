@@ -1,0 +1,5 @@
+---
+- name: install postgresql 
+  hosts: postgresql1.rhdemo.local
+  roles:
+    - ansible-postgresql
